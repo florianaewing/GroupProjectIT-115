@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<h1> Math Requirements Checker </h1>
+<h2> Florian Ewing 11.9.2021 </h2>
+<body>
+<button onclick="CheckCourses()">Find your next class!</button>
+<p id="checker"></p>
+<script>
+/* The function CheckCourses uses a series of if statements in order to determine
+the users next course in mathematics. If the user types in the right input, the 
+program will show the user their next course. If they don't enter the proper form
+of input, the else statement will write output telling the user to try again.
+*/
+function CheckCourses() {
+  var student = prompt("Please enter the name of your most recent math course.");
+  if (student == "Math 081") {
+     document.getElementById("checker").innerHTML =
+    "Your next course is Math 084.";
+  }
+     else if (student == "Math 084") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 085 or Math 097.";
+  }
+     else if (student == "Math 085") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 098.";
+  }
+     else if (student == "Math 097") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 098.";
+  }
+     else if (student == "Math 098") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 141.";
+  }
+     else if (student == "Math 141") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 211 or Math 142.";
+  }
+      else if (student == "Math 142") {
+       document.getElementById("checker").innerHTML =
+       "Your next course is Math 211 or Math &151.";
+  }
+     else if (student == "Math &151") {
+       document.getElementById("checker").innerHTML =
+       "You have completed all required courses.";
+  }
+     else if (student == "Math 211") {
+       document.getElementById("checker").innerHTML =
+       "You have completed all required courses.";
+  }
+  else {
+       document.getElementById("checker").innerHTML = 
+       "Please enter a valid course.";
+  }
+
+
+</script>
